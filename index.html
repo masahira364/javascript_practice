@@ -8,7 +8,11 @@
 <body>
 	<h1 id="text">Javascriptの練習</h1>
 	<script>
+	if(window.confirm('日付を取得しますか？')){
 		document.getElementById('text').textContent = new Date();
+	} else {
+		console.log('変更しません')
+	}
 	</script>
 </body>
 </html>
