@@ -10,8 +10,14 @@
 	<script>
 	if(window.confirm('日付を取得しますか？')){
 		document.getElementById('text').textContent = new Date();
+	}
+	const answer = window.prompt('終了しますか？');
+	 if(answer === 'yes') {
+		window.alert('終了します');
+	} else if(answer === 'no') {
+		window.alert('ページをリロードしてください')
 	} else {
-		console.log('変更しません')
+		window.alert('yesかnoでお答えください')
 	}
 	</script>
 </body>
