@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<form action="#" id="form">
+		<input type="text" name="word">
+		<input type="submit" value="検索">
+	</form>
+	<p id ="output"></p>
+	<script>
+	document.getElementById('form').onsubmit = function(event) {
+		event.preventDefault();
+		const search = document.getElementById('form').word.value;
+		document.getElementById('output').textContent = `「${search}」の検索中...`;
+	};
+	</script>
+</body>
+</html>
