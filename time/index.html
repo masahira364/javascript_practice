@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<h1 id="text">Javascriptの練習</h1>
+	<script>
+		const now = new Date;
+		const year = now.getFullYear();
+		const month = now.getMonth();
+		const date = now.getDate();
+		const hour = now.getHours();
+		const min = now.getMinutes();
+
+		let ampm = ''
+		if(hour < 12) {
+			ampm = "a.m.";
+		} else {
+			ampm ='p.m.';
+		}
+
+		const output = `${year}/${month + 1}/${date} ${hour % 12}:${min}${ampm}`;
+		document.getElementById('time').textContent = output;
+	</script>
+</body>
+</html>
