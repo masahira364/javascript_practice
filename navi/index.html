@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<section>
+	
+</section>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+	'use strict';
+
+	var jpURL = new Array(
+		"",
+		"https://www.pazru.net/",
+		"https://www.pazru.net/js/",
+		"https://www.pazru.net/saku2/"
+		);
+
+	function selectNavi() {
+		var num;
+
+		num = document.navi.contents.selectedIndex;
+		if(num != 0) location.href = jpURL[num];
+	}
+</script>
+
+<form name="navi">
+	<select name="contents" onchange="selectNavi()">
+		<option>コンテンツ一覧</option>
+		<option>Home</option>
+		<option>JavaScript入門</option>
+		<option>HP作成講座</option>
+	</select>
+</form>
+</body>
+</html>
