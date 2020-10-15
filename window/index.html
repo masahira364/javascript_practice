@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<section>
+		<form>
+			<input type="button" value="別窓" onclick="winOpen()">
+			<input type="button" value="Topへ" onclick="subwin('https://www.pazru.net/')">
+		</form>
+	</section>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+	'use strict';
+
+	function winOpen() {
+		window.open("../index.html", "sub");
+	}
+
+	function subwin(jpURL) {
+		window.open(jpURL, "", "width=640, height=480, top=0, left=30");
+	}
+</script>
+
+</body>
+</html>
