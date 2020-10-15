@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<section>
+		<input type="button" value="戻る" onclick="modoru()">
+		<input type="button" value="進む" onclick="susumu()">
+		<input type="button" value="更新" onclick="koushin()">
+	</section>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+	'use strict';
+
+	function modoru() {
+		history.back();
+	}
+
+	function susumu() {
+		history.forward();
+	}
+
+	function koushin() {
+		location.reload();
+	}
+</script>
+
+</body>
+</html>
