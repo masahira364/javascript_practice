@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+	<link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+	<section>
+		<a href="JavaScript:ifr('https://pazru.net/puzzle/')">パズルの部屋へ</a>
+		<br>
+
+		<iframe src="https://pazru.net/" name="waku"></iframe>
+	</section>
+<script src="../jquery-3.4.1.min.js"></script>
+<script>
+	'use strict';
+
+	function ifr(jpURL) {
+		waku.location = jpURL;
+	}
+</script>
+
+</body>
+</html>
