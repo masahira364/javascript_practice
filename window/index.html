@@ -10,6 +10,7 @@
 		<form>
 			<input type="button" value="別窓" onclick="winOpen()">
 			<input type="button" value="Topへ" onclick="subwin('https://www.pazru.net/')">
+			<input type="button" value="中央表示" onclick="winCenter()">
 		</form>
 	</section>
 <script src="../jquery-3.4.1.min.js"></script>
@@ -22,6 +23,14 @@
 
 	function subwin(jpURL) {
 		window.open(jpURL, "", "width=640, height=480, top=0, left=30");
+	}
+
+	function winCenter() {
+		var w = (screen.width-640) / 2;
+		var h = (screen.height-480) / 2;
+
+		window.open("../index.html", "", "width=640, height=480"
+					+ ", left=" + w + ", top=" + h);
 	}
 </script>
 
